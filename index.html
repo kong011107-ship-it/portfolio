@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<!--
+════════════════════════════════════════════════════════════════
+  공준혁 HR 포트폴리오 — 제출본 (프로젝트 3건 · 1분 열람)
+  원본 v4에서 삭제: 01 이력 / 02 관점 / 06 판단 사례 / 07 규모·범위
+                    08 기여 계획 / 각 프로젝트 '한계와 다음 과제'
+────────────────────────────────────────────────────────────────
+  면접 포기율 (AICX)            38% → 31%   (모수 600명)
+  전형 안내 발송 (AICX)         2~3일 → 당일 (상담원 직군 한정)
+  채용 킥오프 리드타임 (AICX)   1~1.5일 → 반나절
+  RE:CRUIT 콘솔 연간 절감       234.9h (1인 1.5개월치 · 설계기준 140명/년)
+  콘솔 개발                     3주 · 업데이트 60회 · AI 업무 혁신 우수상
+  직무 가이드북 리드타임        1주 → 3일 (누적 33개 직무)
+  ⚠ 140명(설계기준) / 195명(실제 입사자) / 600명(포기율 모수) 혼용 금지
+════════════════════════════════════════════════════════════════
+-->
+
+<!--
+════════════════════════════════════════════════════════════════
+  공준혁 HR 포트폴리오 v4 — 수치 팩트시트 (제출 전 대조용 단일 기준)
+  자소서·이력서와 대조할 때 이 표만 보면 됩니다.
+────────────────────────────────────────────────────────────────
+  [성과 — 내가 만든 변화]
+  RE:CRUIT 콘솔 연간 절감      234.9h  (업무일 29.4일 / 1인 1.5개월치)
+    면접 일정 편성              50분 → 7.5분   (70건/년)   49.6h
+    입사 프로세스 도우미        40분 → 11.5분  (140명/년)  66.5h
+    입사구비서류 검증           40분 → 15분    (140명/년)  58.3h
+    인사기록표 복붙마법사       15분 → 3분     (140명/년)  28.0h
+    채용 문의 답변 도우미        5분 → 2분     (650건/년)  32.5h
+  직무 가이드북 리드타임         1주 → 3일     (누적 33개 직무, 1회차 16개)
+  이력서 심의대장               10분 → 2분 /1인
+  면접 포기율 (AICX)            38% → 31%     (모수 600명)
+  전형 안내 발송 (AICX)         2~3일 → 당일  (상담원 직군 한정)
+  채용 킥오프 리드타임 (AICX)   평균 1~1.5일 → 반나절 / 최대 3일 → 반나절
+  회의실 예약 누락률 (AICX)     0%
+
+  [규모 — 내가 통과한 물량 · 성과와 구분할 것]
+  재직 1년간 입사자             195명 (수시 160 + 공채 35)
+  누적 면접 일정 등록           600여 명 (공채 1차 실무면접 205명 조율)
+  채용 페이지 Q&A               650건
+  AICX 3개월                    지원자 2,200명 · 면접 230건 · 입사 35명
+  채용박람회 KPI                130% (고려대 172명 / 이화여대 167명)
+  글로벌 만족도                 한중 4.9 / 해외법인 4.56 / 인턴십 5.0
+
+  ⚠ 혼용 금지
+  · 연 140명  = 콘솔 설계 기준 평년 평균 입사자 수 (절감 계산의 분모)
+  · 195명     = 재직 1년간 실제 입사자 수
+  · 600명     = AICX 면접 포기율 산출 모수
+  세 수치는 각각 다른 맥락. 절대 섞어 쓰지 말 것.
+
+  [경력 — 확정본]
+  현대엘리베이터㈜        2025.08–2026.08  인턴 1년
+                          글로벌HR팀(25.08~11) → 인재확보팀(25.12~26.08)
+  ㈜에이아이씨엑스        2024.10–2025.02  채용담당자 인턴 3개월
+  ㈜한국갈등관리디지털진흥원 2022.08–2023.04  사무직 인턴 9개월
+  ※ 채용 킥오프 프로세스 설계는 AICX 경험 (현대엘리베이터 아님)
+════════════════════════════════════════════════════════════════
+-->
+
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공준혁 · HR 포트폴리오</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+<style>
+/* 인쇄 용지 — 최상위 선언(브라우저가 확실히 세로로 인식) */
+@page{size:A4 portrait;margin:15mm 16mm}
+
+:root{
+  --paper:#FCFCFB;
+  --surface:#F0F1EF;
+  --ink:#14171A;
+  --muted:#676D71;
+  --faint:#9AA0A3;
+  --rule:#DEDFDB;
+  --accent:#1B4D5A;
+  --accent-wash:#E7EEEE;
+
+  /* 타입: Pretendard 단일. 역할 구분은 굵기·자간·크기로만 */
+  --display:'Pretendard Variable',system-ui,-apple-system,sans-serif;
+  --body:'Pretendard Variable',system-ui,-apple-system,sans-serif;
+  --mono:'Pretendard Variable',system-ui,-apple-system,sans-serif;
+
+  --track:9rem;      /* 좌측 라벨 트랙 */
+  --gutter:2.75rem;
+}
+
+/* 고정폭이 없어진 만큼, 라벨류는 굵기로 층위를 만든다 */
+.tag,.cover-eyebrow,.fact-h,.key-n,.basis-l,
+.rail-links a,.rail-print,.who-role{font-weight:600}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.68;
+  font-size:.9375rem;
+  letter-spacing:-.011em;
+  word-break:keep-all;
+}
+
+/* ── 상단 레일 ─────────────────────────────── */
+.rail{
+  position:sticky;top:0;z-index:50;
+  background:rgba(252,252,251,.92);
+  backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.rail-in{
+  max-width:60rem;margin:0 auto;padding:.6rem 2rem;
+  display:flex;align-items:baseline;gap:1.5rem;
+}
+.rail-name{font-family:var(--display);font-weight:700;font-size:.875rem;letter-spacing:-.02em}
+.rail-links{display:flex;gap:1.1rem;margin-left:auto;flex-wrap:wrap}
+.rail-links a{
+  font-family:var(--mono);font-size:.6875rem;letter-spacing:.04em;
+  color:var(--muted);text-decoration:none;padding-bottom:2px;
+  border-bottom:1px solid transparent;transition:color .15s,border-color .15s;
+}
+.rail-links a:hover,.rail-links a:focus-visible{color:var(--accent);border-bottom-color:var(--accent)}
+.rail-print{
+  font-family:var(--mono);font-size:.6875rem;letter-spacing:.04em;
+  background:none;border:1px solid var(--rule);border-radius:2px;
+  padding:.25rem .6rem;color:var(--muted);cursor:pointer;
+}
+.rail-print:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ── 시트(= 인쇄 1페이지) ───────────────────── */
+main{max-width:60rem;margin:0 auto;padding:0 2rem}
+.sheet{padding:5rem 0;border-bottom:1px solid var(--rule)}
+.sheet:last-child{border-bottom:none}
+
+.grid{display:grid;grid-template-columns:var(--track) 1fr;gap:0 var(--gutter)}
+.grid + .grid{margin-top:3rem}
+
+.tag{
+  font-family:var(--mono);font-size:.6875rem;font-weight:500;
+  letter-spacing:.1em;color:var(--faint);text-transform:uppercase;
+  padding-top:.42rem;line-height:1.5;
+}
+.tag em{display:block;font-style:normal;color:var(--accent);letter-spacing:.04em;text-transform:none;margin-top:.2rem}
+
+h2{
+  font-family:var(--display);font-weight:800;font-size:1.5rem;
+  letter-spacing:-.035em;line-height:1.3;margin-bottom:.5rem;
+}
+h3{
+  font-family:var(--display);font-weight:700;font-size:1rem;
+  letter-spacing:-.025em;margin-bottom:.6rem;
+}
+.lede{color:var(--muted);font-size:.875rem;margin-bottom:2.25rem;max-width:38rem}
+
+/* ── 00 표지 ───────────────────────────────── */
+.cover{padding-top:6.5rem;padding-bottom:5.5rem}
+.cover-eyebrow{
+  font-family:var(--mono);font-size:.6875rem;letter-spacing:.12em;
+  color:var(--faint);text-transform:uppercase;margin-bottom:2.75rem;
+  display:flex;gap:.8rem;align-items:center;
+}
+.cover-eyebrow::after{content:"";flex:1;height:1px;background:var(--rule)}
+
+.headline{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2rem,5.6vw,3.125rem);
+  line-height:1.24;letter-spacing:-.045em;
+  margin-bottom:1.15rem;
+}
+.headline b{font-weight:800;color:var(--accent)}
+.subline{
+  font-size:1rem;color:var(--muted);max-width:33rem;
+  padding-left:1rem;border-left:2px solid var(--accent);
+  margin-bottom:3.25rem;
+}
+
+.who{
+  display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;
+  padding-bottom:1.5rem;margin-bottom:2.5rem;border-bottom:1px solid var(--rule);
+}
+.who-name{font-family:var(--display);font-weight:800;font-size:1.75rem;letter-spacing:-.04em}
+.who-role{font-family:var(--mono);font-size:.75rem;letter-spacing:.05em;color:var(--accent)}
+.who-meta{margin-left:auto;font-size:.8125rem;color:var(--muted)}
+
+/* 키워드 3 */
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:2.5rem}
+.key{background:var(--paper);padding:1rem 1.1rem}
+.key-n{font-family:var(--mono);font-size:.625rem;letter-spacing:.1em;color:var(--faint)}
+.key-t{font-family:var(--display);font-weight:700;font-size:.9375rem;letter-spacing:-.02em;margin:.3rem 0 .25rem}
+.key-d{font-size:.75rem;color:var(--muted);line-height:1.55}
+
+/* 성과 수치 3 — 전환 표기법 */
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter) 1.75rem}
+.proof-item{border-top:2px solid var(--ink);padding-top:.85rem}
+/* 고정폭 서체를 뺀 대신, 숫자만 등폭으로 정렬 */
+.figure,.row-when,.fact-l b,.key-n,.cap-n,.cap-proof span{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+.figure{font-family:var(--mono);font-weight:700;line-height:1.15;display:flex;align-items:baseline;gap:.4rem;flex-wrap:wrap}
+.figure .from{font-size:1.125rem;color:var(--faint);font-weight:400}
+.figure .arrow{font-size:1rem;color:var(--accent)}
+.figure .to{font-size:1.875rem;letter-spacing:-.03em}
+.figure .unit{font-size:.9375rem;color:var(--muted);font-weight:400}
+.proof-label{font-size:.8125rem;font-weight:600;margin-top:.5rem}
+.proof-src{font-size:.75rem;color:var(--muted);margin-top:.15rem}
+
+/* ── 01 이력서 ─────────────────────────────── */
+.creed{
+  font-family:var(--display);font-weight:600;font-size:1.0625rem;
+  letter-spacing:-.028em;line-height:1.55;color:var(--accent);
+  background:var(--accent-wash);padding:1.05rem 1.25rem;
+  margin-bottom:2.5rem;
+}
+.rows{border-top:1px solid var(--ink)}
+.row{
+  display:grid;grid-template-columns:8.5rem 1fr;gap:1.5rem;
+  padding:.95rem 0;border-bottom:1px solid var(--rule);
+}
+.row-when{font-family:var(--mono);font-size:.75rem;color:var(--muted);letter-spacing:-.01em;padding-top:.2rem}
+.row-org{font-family:var(--display);font-weight:700;font-size:.9375rem;letter-spacing:-.025em}
+.row-org span{font-weight:500;color:var(--muted);font-size:.8125rem;margin-left:.5rem;letter-spacing:0}
+.row-desc{font-size:.8125rem;color:var(--muted);margin-top:.25rem}
+.row-desc b{color:var(--ink);font-weight:600}
+
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem;margin-top:2rem}
+.fact-h{font-family:var(--mono);font-size:.625rem;letter-spacing:.1em;color:var(--faint);text-transform:uppercase;padding-bottom:.5rem;border-bottom:1px solid var(--rule);margin-bottom:.65rem}
+.fact-l{display:flex;justify-content:space-between;gap:1rem;font-size:.8125rem;padding:.2rem 0}
+.fact-l b{font-family:var(--mono);font-weight:600;letter-spacing:-.02em}
+
+/* ── 02 관점 ───────────────────────────────── */
+.definition{
+  font-family:var(--display);font-weight:700;
+  font-size:1.1875rem;line-height:1.6;letter-spacing:-.032em;
+  padding:1.5rem 0 1.5rem 1.35rem;border-left:3px solid var(--accent);
+  margin-bottom:1.35rem;
+}
+.definition u{text-decoration:none;color:var(--accent)}
+.note{font-size:.8125rem;color:var(--muted);max-width:36rem}
+
+/* 역량 블록 — 역량이 헤드, 판단 기준이 근거 */
+.caps{border-top:2px solid var(--ink)}
+.cap{
+  display:grid;grid-template-columns:3.25rem 1fr;gap:0 1.25rem;
+  padding:1.9rem 0 1.75rem;border-bottom:1px solid var(--rule);
+}
+.cap-n{
+  font-size:1.375rem;font-weight:800;letter-spacing:-.04em;
+  color:var(--faint);line-height:1.1;font-variant-numeric:tabular-nums;
+}
+.cap-head{display:flex;align-items:baseline;gap:.85rem;flex-wrap:wrap;margin-bottom:.95rem}
+.cap-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.25rem,2.6vw,1.625rem);
+  letter-spacing:-.042em;line-height:1.32;
+}
+.cap-chip{
+  font-size:.6875rem;font-weight:600;letter-spacing:.1em;
+  color:var(--accent);background:var(--accent-wash);
+  padding:.22rem .55rem;white-space:nowrap;
+}
+.cap-basis{border-left:2px solid var(--accent);padding:.1rem 0 .1rem 1rem}
+.basis-l{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}
+.basis-n{font-weight:700;font-size:.9375rem;letter-spacing:-.025em;margin:.15rem 0 .2rem}
+.basis-q{font-size:.8125rem;color:var(--muted)}
+.basis-need{font-size:.8125rem;color:var(--ink);margin-top:.5rem;padding-top:.5rem;border-top:1px solid var(--rule)}
+.basis-need b{color:var(--accent);font-weight:600}
+.cap-proof{
+  display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;
+  margin-top:.85rem;font-size:.75rem;color:var(--muted);
+}
+.cap-proof strong{font-weight:600;letter-spacing:.1em;color:var(--faint);font-size:.6875rem;text-transform:uppercase}
+.cap-proof span{font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+
+
+/* 꼬리 */
+.foot{padding:2rem 0 3.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foot p{font-family:var(--mono);font-size:.6875rem;color:var(--faint);letter-spacing:.02em}
+
+/* ── 프로젝트 공통 ─────────────────────────── */
+.p-head{margin-bottom:2.5rem}
+.p-eyebrow{
+  font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--faint);
+  text-transform:uppercase;display:flex;gap:.8rem;align-items:center;margin-bottom:1.1rem;
+}
+.p-eyebrow::after{content:"";flex:1;height:1px;background:var(--rule)}
+.p-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.5rem,3.4vw,2.125rem);letter-spacing:-.045em;line-height:1.26;
+  margin-bottom:.75rem;
+}
+.p-judge{
+  font-size:1rem;color:var(--accent);font-weight:600;letter-spacing:-.025em;
+  padding-left:1rem;border-left:2px solid var(--accent);max-width:36rem;margin-bottom:1.5rem;
+}
+.p-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:.75rem;color:var(--muted);
+  padding-top:.9rem;border-top:1px solid var(--rule)}
+.p-meta b{color:var(--ink);font-weight:600}
+
+/* 문제 목록 */
+.bullets{list-style:none}
+.bullets li{
+  position:relative;padding-left:1.05rem;font-size:.875rem;color:var(--muted);
+  margin-bottom:.5rem;
+}
+.bullets li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:1px;background:var(--accent)}
+.bullets li b{color:var(--ink);font-weight:600}
+
+/* 설계 원칙 — 사람 / 시스템 분할 */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.1rem}
+.split-c{background:var(--paper);padding:1.05rem 1.15rem}
+.split-c.is-sys{background:var(--surface)}
+.split-h{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--faint);text-transform:uppercase;margin-bottom:.55rem}
+.split-t{font-weight:700;font-size:.9375rem;letter-spacing:-.025em;margin-bottom:.4rem}
+.split-d{font-size:.8125rem;color:var(--muted)}
+
+/* 2트랙 */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.track{border-top:2px solid var(--ink);padding-top:.9rem}
+.track-n{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--accent);text-transform:uppercase}
+.track-t{font-family:var(--display);font-weight:800;font-size:1.0625rem;letter-spacing:-.035em;margin:.3rem 0 .6rem}
+.track-d{font-size:.8125rem;color:var(--muted);margin-bottom:.9rem}
+.track-list{list-style:none;border-top:1px solid var(--rule)}
+.track-list li{padding:.55rem 0;border-bottom:1px solid var(--rule);font-size:.8125rem}
+.track-list b{font-weight:600}
+.track-list em{font-style:normal;color:var(--muted)}
+.track-list .off{color:var(--faint)}
+
+/* 처리시간 바 — 전환 표기법 */
+.bars{border-top:2px solid var(--ink)}
+.bar-row{padding:.85rem 0;border-bottom:1px solid var(--rule)}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.42rem}
+.bar-name{font-size:.8125rem;font-weight:600}
+.bar-val{font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar-val .to{color:var(--ink);font-weight:700}
+.bar-val .arrow{color:var(--accent);margin:0 .3rem}
+.bar-val .cut{color:var(--accent);font-weight:600;margin-left:.55rem}
+.bar-track{position:relative;height:9px;background:var(--surface)}
+.bar-before{position:absolute;inset:0 auto 0 0;background:#D6DBDA}
+.bar-after{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.bar-axis{font-size:.6875rem;color:var(--faint);font-weight:600;letter-spacing:.06em;padding:.5rem 0 0;text-align:right}
+
+/* 절감 구성 */
+.compose{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:1.25rem}
+.comp{background:var(--paper);padding:.8rem .85rem}
+.comp-v{font-size:1.0625rem;font-weight:800;letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+.comp-n{font-size:.75rem;color:var(--muted);margin-top:.15rem;line-height:1.45}
+.comp-b{font-size:.6875rem;color:var(--faint);margin-top:.25rem}
+
+/* 기여 */
+.contrib{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;border-top:2px solid var(--ink);padding-top:1rem}
+.contrib h4{font-size:.875rem;font-weight:700;letter-spacing:-.025em;margin-bottom:.35rem}
+.contrib p{font-size:.8125rem;color:var(--muted)}
+
+/* 한계 */
+.limit{background:var(--surface);padding:1.35rem 1.5rem;margin-top:1.5rem}
+.limit-h{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-bottom:.75rem}
+.limit ul{list-style:none}
+.limit li{position:relative;padding-left:1.05rem;font-size:.8125rem;color:var(--muted);margin-bottom:.42rem}
+.limit li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:1px;background:var(--faint)}
+.learn{margin-top:.95rem;padding-top:.95rem;border-top:1px solid var(--rule);font-size:.875rem;font-weight:600;letter-spacing:-.02em;color:var(--accent)}
+
+.fn{font-size:.75rem;color:var(--faint);margin-top:1.5rem;padding-top:.75rem;border-top:1px solid var(--rule)}
+.fn b{color:var(--muted);font-weight:600}
+
+.split.is-3{grid-template-columns:repeat(3,1fr)}
+.split-c.is-mid{background:#F7F8F7}
+
+/* 프로세스 전환 흐름 */
+.flow{border-top:2px solid var(--ink);padding-top:1.1rem}
+.flow-row{display:grid;grid-template-columns:4.5rem 1fr;gap:1rem;align-items:center;padding:.7rem 0}
+.flow-row + .flow-row{border-top:1px solid var(--rule)}
+.flow-l{font-size:.6875rem;font-weight:600;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}
+.flow-row.is-new .flow-l{color:var(--accent)}
+.flow-steps{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.flow-step{
+  font-size:.8125rem;font-weight:600;letter-spacing:-.02em;
+  border:1px solid var(--rule);padding:.4rem .7rem;background:var(--paper);white-space:nowrap;
+}
+.flow-row.is-new .flow-step{border-color:var(--accent);color:var(--accent)}
+.flow-sep{color:var(--faint);font-size:.8125rem}
+.flow-row.is-new .flow-sep{color:var(--accent)}
+
+/* 단독 배운 것 */
+.learn-solo{
+  border-left:2px solid var(--accent);padding:.15rem 0 .15rem 1.15rem;margin-top:1.5rem;
+}
+.learn-solo p{font-size:.875rem;font-weight:600;letter-spacing:-.02em;color:var(--accent);margin-bottom:.35rem}
+.learn-solo span{display:block;font-size:.8125rem;font-weight:400;color:var(--muted);letter-spacing:0}
+
+/* ── 측면 섹션 내비게이터 ───────────────────── */
+html{scroll-behavior:smooth}
+.sheet{scroll-margin-top:4.5rem}
+
+.snav{
+  position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);
+  z-index:40;display:flex;flex-direction:column;gap:0;
+}
+.snav a{
+  display:flex;align-items:center;justify-content:flex-end;gap:.7rem;
+  padding:.42rem 0;text-decoration:none;color:var(--faint);
+}
+.snav .sn-t{
+  font-size:.75rem;font-weight:600;letter-spacing:-.02em;white-space:nowrap;
+  opacity:0;transform:translateX(6px);
+  transition:opacity .22s ease,transform .22s ease,color .22s ease;
+}
+.snav .sn-d{
+  display:block;width:20px;height:2px;background:var(--rule);
+  transition:width .28s cubic-bezier(.4,0,.2,1),background .22s ease;
+}
+.snav a:hover .sn-t,.snav a:focus-visible .sn-t{opacity:1;transform:none;color:var(--muted)}
+.snav a:hover .sn-d,.snav a:focus-visible .sn-d{width:32px;background:var(--muted)}
+.snav a.is-on .sn-t{opacity:1;transform:none;color:var(--accent)}
+.snav a.is-on .sn-d{width:40px;background:var(--accent);height:2px}
+.snav a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* 판단 사례 */
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.case{background:var(--paper);padding:1.15rem 1.25rem;display:flex;flex-direction:column}
+.case-chip{
+  align-self:flex-start;font-size:.625rem;font-weight:600;letter-spacing:.09em;
+  color:var(--accent);background:var(--accent-wash);padding:.2rem .5rem;margin-bottom:.6rem;
+}
+.case-t{font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:-.032em;line-height:1.35;margin-bottom:.5rem}
+.case-s{font-size:.8125rem;color:var(--muted);margin-bottom:.7rem}
+.case-fork{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:.5rem 0;margin-bottom:.65rem}
+.case-fork p{font-size:.75rem;color:var(--faint);position:relative;padding-left:1.4rem;line-height:1.55}
+.case-fork p + p{margin-top:.22rem}
+.case-fork p::before{
+  content:"A";position:absolute;left:0;top:0;font-size:.625rem;font-weight:700;
+  letter-spacing:.06em;color:var(--rule);
+}
+.case-fork p:last-child::before{content:"B"}
+.case-pick{font-size:.8125rem;margin-top:auto}
+.case-pick b{display:block;font-weight:700;letter-spacing:-.02em;margin-bottom:.2rem}
+.case-why{font-size:.8125rem;color:var(--accent);font-weight:600;letter-spacing:-.02em;margin-top:.55rem;padding-top:.55rem;border-top:1px solid var(--rule)}
+
+/* 규모 */
+.scale{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.sc{background:var(--paper);padding:.95rem 1rem}
+.sc-v{font-size:1.25rem;font-weight:800;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.2}
+.sc-v span{font-size:.8125rem;font-weight:600;color:var(--muted);margin-left:.15rem}
+.sc-l{font-size:.8125rem;font-weight:600;margin-top:.3rem}
+.sc-b{font-size:.75rem;color:var(--muted);margin-top:.1rem;line-height:1.45}
+
+/* 글로벌 */
+.glob{border-top:2px solid var(--ink)}
+.gl{display:grid;grid-template-columns:1fr 4.5rem;gap:1.25rem;padding:.9rem 0;border-bottom:1px solid var(--rule);align-items:start}
+.gl-t{font-weight:700;font-size:.9375rem;letter-spacing:-.025em;margin-bottom:.2rem}
+.gl-t em{font-style:normal;font-weight:500;color:var(--muted);font-size:.8125rem;margin-left:.45rem;letter-spacing:0}
+.gl-d{font-size:.8125rem;color:var(--muted)}
+.gl-s{text-align:right}
+.gl-s b{display:block;font-size:1.125rem;font-weight:800;letter-spacing:-.04em;color:var(--accent);font-variant-numeric:tabular-nums}
+.gl-s span{font-size:.6875rem;font-weight:600;letter-spacing:.06em;color:var(--faint)}
+
+/* 마무리 — 기업별 커스텀 */
+.close p{font-size:.9375rem;margin-bottom:1.05rem;max-width:40rem}
+.close p:last-child{margin-bottom:0}
+.close b{font-weight:700}
+.lead-q{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(1.25rem,2.8vw,1.75rem);letter-spacing:-.042em;line-height:1.38;
+  margin-bottom:1.5rem;max-width:34rem;
+}
+.ph{
+  color:var(--accent);font-weight:700;
+  border-bottom:2px dotted var(--accent);padding-bottom:1px;
+}
+.custom-note{
+  border:1px dashed var(--faint);padding:.85rem 1rem;margin-top:1.75rem;
+  font-size:.75rem;color:var(--muted);
+}
+.custom-note b{color:var(--accent);font-weight:600}
+
+/* ── 반응형 ────────────────────────────────── */
+@media (max-width:1180px){
+  .snav{display:none}
+}
+@media (max-width:860px){
+  .cases{grid-template-columns:1fr}
+  .scale{grid-template-columns:1fr 1fr}
+  .gl{grid-template-columns:1fr;gap:.4rem}
+  .gl-s{text-align:left}
+  .gl-s b{display:inline}
+  .gl-s span{margin-left:.35rem}
+  .rail-links{overflow-x:auto;-webkit-overflow-scrolling:touch;flex-wrap:nowrap;padding-bottom:.15rem}
+  main{padding:0 1.25rem}
+  .rail-in{padding:.6rem 1.25rem}
+  .grid{grid-template-columns:1fr;gap:.65rem}
+  .tag{padding-top:0}
+  .proof,.keys,.facts{grid-template-columns:1fr}
+  .keys{gap:1px}
+  .cap{grid-template-columns:1fr;gap:.35rem}
+  .cap-n{font-size:1rem}
+  .split,.tracks,.contrib{grid-template-columns:1fr;gap:1px}
+  .split.is-3{grid-template-columns:1fr}
+  .flow-row{grid-template-columns:1fr;gap:.45rem}
+  .flow-step{font-size:.75rem;padding:.32rem .55rem}
+  .tracks{gap:1.75rem;background:none;border:none}
+  .contrib{gap:1.1rem}
+  .compose{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:1fr;gap:.3rem}
+  .cover{padding-top:3.5rem}
+  .sheet{padding:3.5rem 0}
+}
+
+/* ── 인쇄: 시트 1개 = A4 1장 ─────────────────── */
+@media print{
+  html{font-size:10.2pt}
+  body{background:#fff}
+  .rail{display:none}
+  .snav{display:none}
+  main{max-width:none;padding:0}
+  .sheet{
+    padding:0;border-bottom:none;
+    break-after:page;page-break-after:always;
+  }
+  .sheet:last-child{break-after:auto;page-break-after:auto}
+  .cover{padding-top:1rem}
+  .grid,.row,.cap,.proof-item,.key,.bar-row,.track,.limit,.split{break-inside:avoid;page-break-inside:avoid}
+  .creed,.definition{background:transparent!important}
+  .creed{border-left:3px solid var(--accent);padding-left:1rem}
+  a{text-decoration:none;color:inherit}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+
+<style>
+/* 제출본 — 4시트 구성에 맞춘 여백 조정 */
+.rail-in{justify-content:flex-start;gap:1.25rem}
+/* .who 아래 경력 한 줄 — .who의 밑줄이 이미 구분선이므로 선을 겹치지 않는다 */
+.cover .who{margin-bottom:1.4rem}
+.cover-line{
+  margin:0 0 3.25rem;
+  font-size:.8125rem;color:var(--muted);line-height:1.95
+}
+.cover-line b{color:var(--ink);font-weight:600}
+
+/* ── 여백 정리 ───────────────────────────────
+   2px 윗선을 가진 블록(.tracks/.proof/.flow/.split)은 원본에서
+   항상 .split 뒤에 붙는 것을 전제로 top margin이 없었다.
+   본문 문단·목록 바로 뒤에 오는 경우를 보정한다. */
+.grid .tracks,
+.grid .proof,
+.grid .flow,
+.grid .bars,
+.grid .split{margin-top:1.9rem}
+
+/* 제목 바로 아래일 때는 원래대로 가깝게 */
+.grid h3 + .tracks,
+.grid h3 + .proof,
+.grid h3 + .flow,
+.grid h3 + .bars,
+.grid h3 + .split{margin-top:1.25rem}
+
+/* 본문 문단이 도형에 닿지 않도록 */
+.grid .note{margin-bottom:0}
+.grid .bullets{margin-bottom:0}
+</style>
+<body>
+
+<nav class="rail">
+  <div class="rail-in">
+    <span class="rail-name">공준혁 · HR 포트폴리오</span>
+    <div class="rail-links">
+      <a href="#leadtime">01 퍼널</a>
+      <a href="#system">02 시스템화</a>
+      <a href="#kickoff">03 킥오프</a>
+    </div>
+  </div>
+</nav>
+
+<aside class="snav" aria-label="섹션 바로가기">
+  <a href="#cover" data-key="cover"><span class="sn-t">표지</span><i class="sn-d"></i></a>
+  <a href="#leadtime" data-key="leadtime"><span class="sn-t">01 퍼널 병목</span><i class="sn-d"></i></a>
+  <a href="#system" data-key="system"><span class="sn-t">02 시스템화·AI</span><i class="sn-d"></i></a>
+  <a href="#kickoff" data-key="kickoff"><span class="sn-t">03 킥오프</span><i class="sn-d"></i></a>
+</aside>
+
+<main>
+
+<!-- ══════ 표지 ══════ -->
+<section class="sheet cover" id="cover" data-key="cover">
+  <p class="cover-eyebrow">HR Portfolio · 2026.08</p>
+
+  <h1 class="headline">사람이 겪는 문제를<br><b>프로세스</b>로 해결합니다</h1>
+  <p class="subline">문제를 정의하고, 프로세스를 설계하고, 숫자로 증명해 왔습니다.</p>
+
+  <div class="who">
+    <span class="who-name">공준혁</span>
+    <span class="who-role">Talent Acquisition</span>
+    <span class="who-meta">채용 실무 1년 3개월 · 즉시 입사 가능</span>
+  </div>
+
+  <p class="cover-line">
+    <b>현대엘리베이터㈜</b> 인재확보팀 인턴 · 2025.08–2026.08 &nbsp;|&nbsp;
+    <b>㈜에이아이씨엑스</b> 채용담당자 인턴 · 2024.10–2025.02<br>
+    이 문서는 <b>프로젝트 3건</b>으로만 구성했습니다. 각 장은 배경 · 실행 · 성과 순으로 같은 형식을 따릅니다.
+  </p>
+
+  <div class="proof">
+    <div class="proof-item">
+      <p class="figure"><span class="from">38%</span><span class="arrow">→</span><span class="to">31%</span></p>
+      <p class="proof-label">면접 포기율</p>
+      <p class="proof-src">퍼널 병목 특정 후 안내 리드타임 조정 · 모수 600명</p>
+    </div>
+    <div class="proof-item">
+      <p class="figure"><span class="to">234.9</span><span class="unit">h / 년</span></p>
+      <p class="proof-label">채용 운영 업무시간 절감</p>
+      <p class="proof-src">오프라인 도구 6종 직접 개발 · 담당자 1인 1.5개월치</p>
+    </div>
+    <div class="proof-item">
+      <p class="figure"><span class="from">1~1.5일</span><span class="arrow">→</span><span class="to">반나절</span></p>
+      <p class="proof-label">요청 접수 ~ 공고 게시</p>
+      <p class="proof-src">채용 킥오프 프로세스 설계 · 전 부서 정착</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ 01 퍼널 병목 ══════ -->
+<section class="sheet" id="leadtime" data-key="leadtime">
+  <div class="p-head">
+    <p class="p-eyebrow">01 · 프로젝트 1 — ㈜에이아이씨엑스 HR팀</p>
+    <h2 class="p-title">채용 퍼널의 병목을 찾아 막았습니다</h2>
+    <p class="p-judge">공고를 늘려도 입사자가 늘지 않을 때 무엇을 볼 것인가 — 유입이 아니라 이탈 지점을 데이터로 특정했습니다.</p>
+    <p class="p-meta">
+      <span>시기 <b>성수기 인력 충원 대응</b></span>
+      <span>범위 <b>원인 분석 · 개선안 수립 · 적용</b></span>
+      <span>대상 <b>상담원 직군 한정</b></span>
+    </p>
+  </div>
+
+  <div class="grid">
+    <p class="tag">배경</p>
+    <div>
+      <h3>지원자의 절반 가까이가 면접 단계에서 사라졌습니다</h3>
+      <ul class="bullets">
+        <li>주력 사업인 항공사 고객지원 상담센터의 <b>성수기 충원이 시급</b>했습니다. 공고와 채널을 늘렸지만 최종 입사자 수가 따라오지 않았습니다.</li>
+        <li>이탈이 어디서, 왜 생기는지를 체감이 아니라 <b>데이터로 확인하는 것이 먼저</b>라고 판단했습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">실행</p>
+    <div>
+      <h3>포기 사유를 직접 수집해 원인을 특정했습니다</h3>
+      <p class="note">면접 포기자의 사유를 모아보니 <b>타사 합격이 다수</b>였습니다. 비숙련 직군 지원자는 <b>즉시 일자리가 필요한 층</b>인데, 회사는 브랜딩 방침에 따라 안내를 2~3일 뒤에 보내고 있었습니다. 먼저 연락한 회사가 데려가는 구조였습니다.</p>
+      <div class="split is-3">
+        <div class="split-c">
+          <p class="split-h">사업의 언어</p>
+          <p class="split-t">성수기까지 인원을 채운다</p>
+          <p class="split-d">충원이 늦으면 상담센터 운영 자체가 흔들립니다.</p>
+        </div>
+        <div class="split-c is-mid">
+          <p class="split-h">조직의 언어</p>
+          <p class="split-t">브랜딩 방침은 유지한다</p>
+          <p class="split-d">안내 시점을 두는 데는 이유가 있었습니다.</p>
+        </div>
+        <div class="split-c is-sys">
+          <p class="split-h">지원자의 언어</p>
+          <p class="split-t">당장 일할 곳이 필요하다</p>
+          <p class="split-d">2~3일은 지원자가 다른 회사로 옮겨 가는 시간이었습니다.</p>
+        </div>
+      </div>
+      <p class="fn">전사 방침은 그대로 두고 <b>상담원 직군에 한해 예외를 설계</b>했습니다. 정책을 부정하는 대신 적용 범위를 조정하는 쪽을 택했습니다.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">성과</p>
+    <div>
+      <h3>유입 캠페인 없이, 새는 곳 하나만 막았습니다</h3>
+      <div class="proof">
+        <div class="proof-item">
+          <p class="figure"><span class="from">38%</span><span class="arrow">→</span><span class="to">31%</span></p>
+          <p class="proof-label">면접 포기율</p>
+          <p class="proof-src">모수 600명 기준</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="from">2~3일</span><span class="arrow">→</span><span class="to">당일</span></p>
+          <p class="proof-label">서류 합격 · 면접 안내 발송</p>
+          <p class="proof-src">상담원 직군 한정 예외</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="to">충원</span><span class="unit">완료</span></p>
+          <p class="proof-label">성수기 대응</p>
+          <p class="proof-src">필요 인력을 채운 상태로 진입</p>
+        </div>
+      </div>
+      <p class="fn">이탈이 많다는 체감에서 멈추지 않고 포기 사유를 직접 수집해, 문제가 <b>유입이 아니라 안내 시점</b>에 있음을 확인한 것이 이 프로젝트의 전부입니다.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>공준혁 · HR 포트폴리오</p>
+    <p>01 · 채용 퍼널 병목 개선</p>
+  </div>
+</section>
+
+<!-- ══════ 02 시스템화 · AI ══════ -->
+<section class="sheet" id="system" data-key="system">
+  <div class="p-head">
+    <p class="p-eyebrow">02 · 프로젝트 2 — 현대엘리베이터㈜ 인재확보팀</p>
+    <h2 class="p-title">반복되는 채용 운영을 하나의 시스템으로 만들었습니다</h2>
+    <p class="p-judge">개인정보 제약 속에서도 AI를 활용해 도구를 설계했습니다.</p>
+    <p class="p-meta">
+      <span>기간 <b>3주 · 업데이트 60회</b></span>
+      <span>범위 <b>기획 · 설계 · 개발 · 매뉴얼화 단독 수행</b></span>
+      <span>결과 <b>경영지원본부 AI 업무 혁신 우수상</b></span>
+    </p>
+  </div>
+
+  <div class="grid">
+    <p class="tag">배경</p>
+    <div>
+      <h3>회사 전체가 LLM 활용에 선을 긋고 있었습니다</h3>
+      <ul class="bullets">
+        <li>사내 개인정보 유출 사건 이후 운영 업무에서의 <b>LLM 활용이 전면 제한</b>됐습니다. 비용과 의사결정 구조를 이유로 채용 AX 자체를 회의적으로 보는 시선도 있었습니다.</li>
+        <li>그러나 채용 절차마다 도구와 데이터가 흩어져 같은 정보를 <b>반복 입력하고 다시 대조</b>해야 했고, 진행 단계는 문서가 아니라 담당자의 기억에 남아 있었습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">실행</p>
+    <div>
+      <h3>LLM을 워크플로우에 넣는 대신, LLM으로 도구를 만들었습니다</h3>
+      <p class="note">업무를 Task 단위로 분해하고 6개 질문(정보의 출처 / 사람의 판단 지점 / 반복 작업 / 오류 발생 지점 / 검증 방식 / 기록 위치)으로 경계를 먼저 그었습니다. <b>판단과 저작은 사람이, 반복·대조·표준화는 도구가</b> 하도록 나눴습니다. 그리고 <b>HTML로 데이터를 처리하면 외부 서버 전송이 없다</b>는 점을 확인해, 설계 단계에만 AI를 쓰는 오프라인 도구로 방향을 잡았습니다.</p>
+      <div class="tracks">
+        <div class="track">
+          <p class="track-n">Track A — 팀을 향해</p>
+          <p class="track-t">RE:CRUIT 운영 콘솔 · 도구 6종</p>
+          <p class="track-d">채용 문의 답변 도구부터 시작해, 콘솔을 공용 데이터 허브로 두고 도구를 채용 흐름대로 연동했습니다.</p>
+          <ul class="track-list">
+            <li><b>면접 일정 편성</b> <em>· 50분 → 7.5분</em></li>
+            <li><b>입사 프로세스 도우미</b> <em>· 40분 → 11.5분</em></li>
+            <li><b>입사구비서류 검증</b> <em>· 40분 → 15분</em></li>
+            <li><b>인사기록표 복붙마법사</b> <em>· 15분 → 3분</em></li>
+            <li><b>채용 문의 답변 도우미</b> <em>· 5분 → 2분</em></li>
+          </ul>
+        </div>
+        <div class="track">
+          <p class="track-n">Track B — 현업을 향해</p>
+          <p class="track-t">AI 에이전트 3종</p>
+          <p class="track-d">MS Copilot Agent Studio로 설계. 대신 써주는 것이 아니라 표준화만 자동화해, 정보의 주인을 현업으로 남겼습니다.</p>
+          <ul class="track-list">
+            <li><b>직무 가이드북 생성</b> <em>· 1주 → 3일 · 누적 33개 직무</em></li>
+            <li><b>이력서 심의대장</b> <em>· 10분 → 2분 (1인당)</em></li>
+            <li class="off"><b>AI 모의면접</b> <em>· 기획·설계 완료, 실행 보류</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">성과</p>
+    <div>
+      <h3>3주 만에, 유출 위험 없는 구조로 완성했습니다</h3>
+      <div class="proof">
+        <div class="proof-item">
+          <p class="figure"><span class="to">234.9</span><span class="unit">h / 년</span></p>
+          <p class="proof-label">채용 운영 업무시간 절감</p>
+          <p class="proof-src">업무일 29.4일 · 담당자 1인 약 1.5개월치</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="to">60</span><span class="unit">회</span></p>
+          <p class="proof-label">3주간 업데이트 횟수</p>
+          <p class="proof-src">현업을 수행하며 실사용 피드백 반영</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="to">우수상</span></p>
+          <p class="proof-label">경영지원본부 AI 업무 혁신</p>
+          <p class="proof-src">팀 공식 채택 후 실사용 중</p>
+        </div>
+      </div>
+      <p class="fn">절감 효과를 시간이 아니라 <b>담당자 1인 1.5개월치</b>로 환산해 제시했고, 사내 발표와 매뉴얼로 인수인계를 마쳐 제가 없는 지금도 실사용 중입니다. 절감 계산에 쓴 <b>연 140명</b>은 콘솔 설계 시 사용한 평년 평균 입사자 수로, 재직 1년간 실제 입사자 195명과는 기준이 다른 수치입니다.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>공준혁 · HR 포트폴리오</p>
+    <p>02 · 제약 안에서의 AI 활용 설계</p>
+  </div>
+</section>
+
+<!-- ══════ 03 킥오프 ══════ -->
+<section class="sheet" id="kickoff" data-key="kickoff">
+  <div class="p-head">
+    <p class="p-eyebrow">03 · 프로젝트 3 — ㈜에이아이씨엑스 HR팀 · 2024.12</p>
+    <h2 class="p-title">채용 킥오프 프로세스 설계</h2>
+    <p class="p-judge">절차를 늘리면 일이 늘어난다 — 그래서 늘리지 않고, 앞단으로 옮겼습니다. 총소요시간은 오히려 줄었습니다.</p>
+    <p class="p-meta">
+      <span>범위 <b>설계 · 전사 공지 · 정착</b></span>
+      <span>대상 <b>채용을 요청하는 전 부서</b></span>
+      <span>상태 <b>조직 내 필수 절차로 정착</b></span>
+    </p>
+  </div>
+
+  <div class="grid">
+    <p class="tag">배경</p>
+    <div>
+      <h3>채용이 메신저 한 줄에서 시작되고 있었습니다</h3>
+      <ul class="bullets">
+        <li>재택근무가 기본인 조직에서 개발 조직이 신설되며 <b>신규 공고가 급증</b>했습니다. 현업이 메신저로 "이런 사람 뽑아주세요"라고 보내면 채용이 시작됐고, 필요한 정보가 처음부터 빠져 있었습니다.</li>
+        <li>담당자가 다시 묻고, 답이 늦고, 또 묻는 <b>재문의가 반복</b>되며 채용 맥락과 인재상이 담기지 않은 공고가 나갔습니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">실행</p>
+    <div>
+      <h3>단계를 추가한 것이 아니라, 순서를 바꿨습니다</h3>
+      <div class="flow">
+        <div class="flow-row">
+          <p class="flow-l">기존</p>
+          <div class="flow-steps">
+            <span class="flow-step">메신저 요청</span><span class="flow-sep">→</span>
+            <span class="flow-step">담당자 추가 문의</span><span class="flow-sep">→</span>
+            <span class="flow-step">답변 대기</span><span class="flow-sep">→</span>
+            <span class="flow-step">재문의</span><span class="flow-sep">→</span>
+            <span class="flow-step">공고 작성</span>
+          </div>
+        </div>
+        <div class="flow-row is-new">
+          <p class="flow-l">개편</p>
+          <div class="flow-steps">
+            <span class="flow-step">화상회의 킥오프</span><span class="flow-sep">→</span>
+            <span class="flow-step">표준 요청서</span><span class="flow-sep">→</span>
+            <span class="flow-step">공고 게시</span>
+          </div>
+        </div>
+      </div>
+      <ul class="bullets" style="margin-top:1.9rem">
+        <li>뒤에서 반복되던 문답을 <b>앞의 30분</b>에 몰아넣고, 채용 사유 · 목표 시기 · 인원 · 전형 절차를 <b>회의에서 반드시 합의하는 항목</b>으로 고정했습니다.</li>
+        <li>전사 공지를 <b>문제 상황 → 개편 필요성 → 변경된 진행 방식</b> 순으로 구성했습니다. 새 규칙을 먼저 알리면 규제로 읽히고, 문제를 먼저 알리면 해결책으로 읽힙니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <p class="tag">성과</p>
+    <div>
+      <h3>앞단이 무거워지자 전체가 가벼워졌습니다</h3>
+      <div class="proof">
+        <div class="proof-item">
+          <p class="figure"><span class="from">1~1.5일</span><span class="arrow">→</span><span class="to">반나절</span></p>
+          <p class="proof-label">요청 접수 ~ 공고 게시 (평균)</p>
+          <p class="proof-src">최대 3일 → 반나절</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="to">해소</span></p>
+          <p class="proof-label">요청 단계 정보 누락</p>
+          <p class="proof-src">채용 맥락과 인재상이 공고에 반영</p>
+        </div>
+        <div class="proof-item">
+          <p class="figure"><span class="to">정착</span></p>
+          <p class="proof-label">조직 내 필수 절차로</p>
+          <p class="proof-src">별도 저항 없이 전 부서 적용</p>
+        </div>
+      </div>
+      <p class="fn">현업 입장에서 늘어난 것은 회의 한 번이고, 줄어든 것은 며칠간의 문답이었습니다. 반대가 나오지 않은 이유는 설득을 잘해서가 아니라 <b>실제로 각자의 일이 줄었기 때문</b>이라고 봅니다.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p>공준혁 · HR 포트폴리오 · 2026.08</p>
+    <p>기재된 모든 수치는 재직 중 실측·산출한 값입니다</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.snav a'));
+  var sheets = Array.prototype.slice.call(document.querySelectorAll('.sheet[data-key]'));
+  if (!links.length || !sheets.length) return;
+
+  var map = {};
+  links.forEach(function (a) { map[a.dataset.key] = a; });
+
+  function setActive(key) {
+    links.forEach(function (a) { a.classList.toggle('is-on', a.dataset.key === key); });
+  }
+
+  // 화면 중앙선을 지나는 시트를 현재 위치로 본다
+  var visible = new Map();
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      visible.set(e.target, e.isIntersecting ? e.intersectionRatio : 0);
+    });
+    var best = null, top = 0;
+    visible.forEach(function (ratio, el) {
+      if (ratio > top) { top = ratio; best = el; }
+    });
+    if (best) setActive(best.dataset.key);
+  }, { threshold: [0, 0.15, 0.35, 0.6, 0.9], rootMargin: '-15% 0px -35% 0px' });
+
+  sheets.forEach(function (s) { io.observe(s); });
+  setActive(sheets[0].dataset.key);
+})();
+</script>
+
+</body>
+</html>
